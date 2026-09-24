@@ -3,11 +3,20 @@
   "rewrites": [
     {
       "source": "/game-proxy",
-      "destination": "https://pokerogue.net/"
+      "destination": "https://pokerogue.net"
     },
     {
       "source": "/game-proxy/:path*",
-      "destination": "https://pokerogue.net*"
+      "destination": "https://pokerogue.net:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/game-proxy/:path*",
+      "headers": [
+        { "key": "X-Forwarded-Host", "value": "pokerogue.net" },
+        { "key": "Host", "value": "pokerogue.net" }
+      ]
     }
   ]
 }
