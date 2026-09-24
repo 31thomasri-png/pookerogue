@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/game-proxy/:path*",
+      "destination": "https://pokerogue.net*"
+    }
+  ]
+}
