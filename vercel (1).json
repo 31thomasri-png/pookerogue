@@ -1,0 +1,22 @@
+{
+  "name": "poookerogue",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "phaser": "^3.80.1",
+    "i18next": "^23.11.5",
+    "i18next-browser-languagedetector": "^7.2.1",
+    "i18next-http-backend": "^2.5.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.2",
+    "vite": "^5.2.0"
+  }
+}
