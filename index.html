@@ -6,26 +6,54 @@
     <title>Retro Arcade Portal</title>
     <style>
         body {
-            margin: 0; padding: 0; background-color: #1a1625; color: #fff;
-            display: flex; flex-direction: column; align-items: center;
-            justify-content: center; min-height: 100vh; font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1625;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
         .arcade-container {
-            width: 90%; max-width: 1024px; background: #252131; padding: 20px;
-            border-radius: 16px; box-shadow: 0px 10px 30px rgba(0,0,0,0.5); border: 3px solid #ff007f;
+            width: 90%;
+            max-width: 1024px;
+            background: #252131;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+            border: 3px solid #ff007f;
+        }
+        .arcade-header {
+            text-align: center;
+            margin-bottom: 15px;
         }
         .arcade-header h1 {
-            text-align: center; margin: 0 0 15px 0; font-size: 2rem; color: #00ffff;
+            margin: 0;
+            font-size: 2rem;
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff;
+            letter-spacing: 2px;
         }
-        .game-frame { width: 100%; height: 600px; border: none; border-radius: 8px; background: #000; }
+        .game-frame {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 8px;
+            background: #000;
+        }
     </style>
 </head>
 <body>
+
     <div class="arcade-container">
         <div class="arcade-header">
             <h1>POKÉROGUE GAME STATION</h1>
         </div>
-        <!-- Pointing to your internal Vercel server proxy instead of the blocked main domain -->
+        
+        <!-- Embedded Game Windows Proxy Entry Point -->
         <iframe 
             src="/game-proxy/" 
             class="game-frame"
@@ -33,5 +61,6 @@
             sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-top-navigation">
         </iframe>
     </div>
+
 </body>
 </html>
